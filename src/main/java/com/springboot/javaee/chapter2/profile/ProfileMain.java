@@ -10,7 +10,7 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
 public class ProfileMain {
     public static void main(String[] args){
         AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext();
-        context.getEnvironment().setActiveProfiles("dev");
+        context.getEnvironment().setActiveProfiles("prod");
         //此处注册配置
         context.register(ProfileConfig.class);
         //刷新容器

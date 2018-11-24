@@ -9,6 +9,7 @@ import org.springframework.stereotype.Service;
  */
 @Service
 public class DemoMethodService {
+    @Action(name = "DemoMethodService Action Annotation")
     public void add(){
         System.out.println(DemoMethodService.class.getName() + " add");
     }
